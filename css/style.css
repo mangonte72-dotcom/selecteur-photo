@@ -1,0 +1,35 @@
+/* ---------- La liste des photos ---------- */
+#photo-list {
+  width: 800px;              /* les photos tiennent sur 800 pixels de large */
+  list-style: none;          /* pas de puces */
+  padding: 0;
+}
+
+#photo-list li {
+  display: inline-block;     /* les photos s'affichent les unes à côté des autres */
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.4s;   /* le changement de couleur s'anime */
+}
+
+#photo-list li img {
+  display: block;            /* enlève le petit espace sous l'image */
+}
+
+/* Au survol : fond gris */
+#photo-list li:hover {
+  background-color: silver;
+}
+
+/* Photo sélectionnée : fond vert (même au survol) */
+#photo-list li.selected {
+  background-color: forestgreen;
+}
+
+/* ---------- Le nombre de photos sélectionnées ---------- */
+#total em {
+  color: red;
+  font-weight: bold;
+}
